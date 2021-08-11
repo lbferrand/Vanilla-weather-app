@@ -38,7 +38,7 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">Paris</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>
                 Last update:
@@ -54,14 +54,14 @@
                     alt="image"
                     class="float-left"
                   />
-                  <strong>12</strong
+                  <strong id="temperature"></strong
                   ><span class="units"> °C | <a href="#">°F</a></span>
                 </div>
               </div>
               <div class="col-6">
                 <ul>
-                  <li>Humidity: <span id="humidity"> %</span></li>
-                  <li>Wind: <span id="wind"></span>mph</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
                   <li>Precipitation: <span id="precipitation"></span>%</li>
                   <li>Feels Like: <span id="feels-like"></span></li>
                 </ul>
@@ -79,8 +79,6 @@
         </small>
       </div>
     </div>
-    <script>
-      src = "src/app.js";
-    </script>
+    <script src="src/app.js"></script>
   </body>
 </html>
