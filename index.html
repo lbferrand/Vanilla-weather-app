@@ -15,6 +15,69 @@
     <title>Vanilla Weather App</title>
   </head>
   <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form action="" id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Search for City"
+                  id="city-input"
+                  onfocus="this.value=''"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-sm"
+                  value="Search"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city">Paris</h1>
+            <ul>
+              <li>
+                Last update:
+                <span id="date"></span>
+              </li>
+              <li id="description"></li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img src="#" id="icon" alt="image" class="float-left" />
+                  <div class="float-left">
+                    <strong id="temperature"></strong>
+                    <span class="units" id="symbol">
+                      <a href="#" id="celsius-link" class="active">°C</a>|
+                      <a href="#" id="fahrenheit-link">°F</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity"> %</span></li>
+                  <li>Wind: <span id="wind"></span>mph</li>
+                  <li>Precipitation: <span id="precipitation"></span>%</li>
+                  <li>Feels Like: <span id="feels-like"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a href="https://github.com/lbferrand/weather-application-1"
+            >Open-source code</a
+          >
+          by Luciana Ferrand
+        </small>
+      </div>
+    </div>
     <script>
       src = "src/app.js";
     </script>
